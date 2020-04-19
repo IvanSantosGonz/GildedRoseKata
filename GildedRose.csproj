@@ -68,6 +68,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Roses\AgedBrie.cs" />
     <Compile Include="Roses\BackstagePass.cs" />
+    <Compile Include="Roses\Conjured.cs" />
     <Compile Include="Roses\Rose.cs" />
     <Compile Include="Roses\Sulfuras.cs" />
   </ItemGroup>

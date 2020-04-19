@@ -127,7 +127,7 @@ namespace csharp {
 
         [Test]
         public void Conjured_roses_degrade_in_Quality_twice_as_fast_as_normal_roses() {
-            var rose = new Rose("Conjured", 10, 20);
+            var rose = new Conjured(10, 20);
             IList<Rose> roses = new List<Rose> {rose};
 
             GildedRose gildedRose = new GildedRose(roses);
