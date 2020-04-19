@@ -15,21 +15,14 @@ namespace csharp {
                     Roses[i].DecreaseQuality();
                 }
                 else {
-                    if (Roses[i].Quality < 50) {
-                        Roses[i].IncreaseQuality();
+                    Roses[i].IncreaseQuality();
+                    if (Roses[i].Name == BACKSTAGE_PASSES) {
+                        if (Roses[i].SellIn < 11) {
+                            Roses[i].IncreaseQuality();
+                        }
 
-                        if (Roses[i].Name == BACKSTAGE_PASSES) {
-                            if (Roses[i].SellIn < 11) {
-                                if (Roses[i].Quality < 50) {
-                                    Roses[i].IncreaseQuality();
-                                }
-                            }
-
-                            if (Roses[i].SellIn < 6) {
-                                if (Roses[i].Quality < 50) {
-                                    Roses[i].IncreaseQuality();
-                                }
-                            }
+                        if (Roses[i].SellIn < 6) {
+                            Roses[i].IncreaseQuality();
                         }
                     }
                 }
@@ -48,9 +41,6 @@ namespace csharp {
                         }
                     }
                     else {
-                        /*if (Roses[i].Quality < 50) {
-                            Roses[i].IncreaseQuality();
-                        }*/
                         Roses[i].IncreaseQuality();
                     }
                 }
