@@ -29,7 +29,7 @@ namespace csharp
                 {
                     if (Roses[i].Quality < 50)
                     {
-                        Roses[i].Quality = Roses[i].Quality + 1;
+                        Roses[i].IncreaseQuality();
 
                         if (Roses[i].Name == BACKSTAGE_PASSES)
                         {
