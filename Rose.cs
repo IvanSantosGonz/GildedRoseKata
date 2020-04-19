@@ -1,19 +1,20 @@
 ﻿namespace csharp
 {
-    public class Rose
-    {
+    public class Rose {
+        protected int MAXIMUM_ROSE_QUALITY = 50;
+        public string Name { get; set; }
+
+        public int SellIn { get; set; }
+        public int Quality { get; set; }
+
+        public Rose() {
+        }
+
         public Rose(string name, int sellIn, int quality) {
             Name = name;
             SellIn = sellIn;
             Quality = quality;
         }
-
-        public Rose() {
-        }
-
-        public string Name { get; set; }
-        public int SellIn { get; set; }
-        public int Quality { get; set; }
 
         public override string ToString()
         {
@@ -21,7 +22,9 @@
         }
 
         public void IncreaseQuality() {
-            Quality++;
+            if (Quality < MAXIMUM_ROSE_QUALITY) {
+                Quality++;
+            }
         }
 
         public virtual void DecreaseQuality() {
@@ -37,7 +40,8 @@
 
     public class Sulfuras : Rose {
      
-        public Sulfuras(int sellIn, int quality) : base("Sulfuras, Hand of Ragnaros", 0, 40){
+        
+        public Sulfuras(int sellIn, int quality) : base("Sulfuras, Hand of Ragnaros", 0, 40) {
         }
 
         public override void DecreaseQuality() {
