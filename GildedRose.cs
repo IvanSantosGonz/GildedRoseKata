@@ -17,10 +17,8 @@ namespace csharp {
                 else {
                     Roses[i].IncreaseQuality();
                 }
-
-                if (Roses[i].Name != "Sulfuras, Hand of Ragnaros") {
-                    Roses[i].DecreaseSellIn();
-                }
+                
+                Roses[i].DecreaseSellIn();
 
                 if (Roses[i].SellIn < 0) {
                     if (Roses[i].Name != "Aged Brie") {
