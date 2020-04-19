@@ -57,7 +57,6 @@ namespace csharp {
             //It is done so to test equality between child and parent
             var roseAfterFiveDays = new Rose("Aged Brie", 0, 40);
             Assert.True(roseAfterFiveDays.Equals(rose));
-
         }
 
         [Test]
@@ -123,6 +122,21 @@ namespace csharp {
 
             var roseAfterElevenDays = new Rose("Backstage passes to a TAFKAL80ETC concert", -1, 0);
             Assert.True(roseAfterElevenDays.Equals(rose));
+        }
+
+
+        [Test]
+        public void Conjured_roses_degrade_in_Quality_twice_as_fast_as_normal_roses() {
+            var rose = new Rose("Conjured", 10, 20);
+            IList<Rose> roses = new List<Rose> {rose};
+
+            GildedRose gildedRose = new GildedRose(roses);
+            for (var i = 0; i < 5; i++) {
+                gildedRose.UpdateQuality();
+            }
+
+            var roseAfterFiveDays = new Rose("Conjured", 5, 10);
+            Assert.True(roseAfterFiveDays.Equals(rose));
         }
     }
 }
