@@ -18,5 +18,10 @@
         public void DecreaseQuality() {
             Quality--;
         }
+        
+        public void DecreaseSellIn() {
+            SellIn--;
+        }
+        
     }
 }

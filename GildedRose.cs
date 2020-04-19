@@ -54,7 +54,7 @@ namespace csharp
 
                 if (Roses[i].Name != "Sulfuras, Hand of Ragnaros")
                 {
-                    Roses[i].SellIn = Roses[i].SellIn - 1;
+                    Roses[i].DecreaseSellIn();
                 }
 
                 if (Roses[i].SellIn < 0)
