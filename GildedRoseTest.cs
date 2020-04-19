@@ -108,7 +108,7 @@ namespace csharp {
                 gildedRose.UpdateQuality();
             }
 
-            var roseAfterFiveDays = new Rose {Name = "Backstage passes to a TAFKAL80ETC concert", SellIn = 5, Quality = 30};
+            var roseAfterFiveDays = new Rose {Name = "Backstage passes to a TAFKAL80ETC concert", SellIn = 5, Quality = 31};
             Assert.AreEqual(roseAfterFiveDays.Name, roses[0].Name);
             Assert.AreEqual(roseAfterFiveDays.SellIn, roses[0].SellIn);
             Assert.AreEqual(roseAfterFiveDays.Quality, roses[0].Quality);
@@ -117,7 +117,7 @@ namespace csharp {
                 gildedRose.UpdateQuality();
             }
 
-            roseAfterFiveDays = new Rose {Name = "Backstage passes to a TAFKAL80ETC concert", SellIn = 0, Quality = 45};
+            roseAfterFiveDays = new Rose {Name = "Backstage passes to a TAFKAL80ETC concert", SellIn = 0, Quality = 46};
             Assert.AreEqual(roseAfterFiveDays.Name, roses[0].Name);
             Assert.AreEqual(roseAfterFiveDays.SellIn, roses[0].SellIn);
             Assert.AreEqual(roseAfterFiveDays.Quality, roses[0].Quality);

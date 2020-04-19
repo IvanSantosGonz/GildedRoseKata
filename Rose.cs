@@ -28,15 +28,19 @@
         }
 
         public virtual void DecreaseQuality() {
-            if (Quality > 0)
+            if (Quality > 0) {
                 Quality--;
+                if (SellIn < 0) {
+                    Quality--;
+                }
+            }
         }
         
         public virtual void DecreaseSellIn() {
             SellIn--;
         }
 
-        public void UpdateStatus() {
+        public virtual void UpdateStatus() {
             DecreaseSellIn();
             DecreaseQuality();
         }
@@ -61,7 +65,7 @@
         }
 
         public override void IncreaseQuality() {
-            if (SellIn <= 0) {
+            if (SellIn < 0) {
                 Quality = 0;
             }
             else if (SellIn < 6) {
@@ -74,7 +78,10 @@
                 Quality++;
             }
         }
-        
-        
+
+        public override void UpdateStatus() {
+            DecreaseSellIn();
+            IncreaseQuality();
+        }
     }
 }
