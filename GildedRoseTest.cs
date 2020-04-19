@@ -100,7 +100,7 @@ namespace csharp {
         
         [Test]
         public void Backstage_passes_like_aged_brie_by_2_when_there_are_10_days_or_less_and_by_3_when_there_are_5_days_or_less() {
-            var rose = new Rose {Name = "Backstage passes to a TAFKAL80ETC concert", SellIn = 10, Quality = 20};
+            var rose = new BackstagePass(10, 20);
             IList<Rose> roses = new List<Rose> {rose};
             GildedRose gildedRose = new GildedRose(roses);
 

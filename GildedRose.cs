@@ -16,15 +16,6 @@ namespace csharp {
                 }
                 else {
                     Roses[i].IncreaseQuality();
-                    if (Roses[i].Name == BACKSTAGE_PASSES) {
-                        if (Roses[i].SellIn < 11) {
-                            Roses[i].IncreaseQuality();
-                        }
-
-                        if (Roses[i].SellIn < 6) {
-                            Roses[i].IncreaseQuality();
-                        }
-                    }
                 }
 
                 if (Roses[i].Name != "Sulfuras, Hand of Ragnaros") {
