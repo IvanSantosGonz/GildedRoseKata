@@ -84,7 +84,7 @@ namespace csharp {
         
         [Test]
         public void Sulfuras_are_a_legendary_rose_and_never_has_to_be_sold_or_decrease_their_quality() {
-            var rose = new Rose {Name = "Sulfuras, Hand of Ragnaros", SellIn = 0, Quality = 40};
+            var rose = new Sulfuras(0, 40);
             IList<Rose> roses = new List<Rose> {rose};
             GildedRose gildedRose = new GildedRose(roses);
 

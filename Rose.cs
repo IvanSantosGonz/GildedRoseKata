@@ -2,6 +2,15 @@
 {
     public class Rose
     {
+        public Rose(string name, int sellIn, int quality) {
+            Name = name;
+            SellIn = sellIn;
+            Quality = quality;
+        }
+
+        public Rose() {
+        }
+
         public string Name { get; set; }
         public int SellIn { get; set; }
         public int Quality { get; set; }
@@ -15,13 +24,23 @@
             Quality++;
         }
 
-        public void DecreaseQuality() {
-            Quality--;
+        public virtual void DecreaseQuality() {
+            if (Quality > 0)
+                Quality--;
         }
         
         public void DecreaseSellIn() {
             SellIn--;
         }
         
+    }
+
+    public class Sulfuras : Rose {
+     
+        public Sulfuras(int sellIn, int quality) : base("Sulfuras, Hand of Ragnaros", 0, 40){
+        }
+
+        public override void DecreaseQuality() {
+        }
     }
 }
