@@ -56,6 +56,8 @@ namespace csharp {
 
             //It is done so to test equality between child and parent
             var roseAfterFiveDays = new Rose("Aged Brie", 0, 40);
+            Assert.True(roseAfterFiveDays.Equals(rose));
+
         }
 
         [Test]
