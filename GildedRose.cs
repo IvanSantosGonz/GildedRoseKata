@@ -48,9 +48,10 @@ namespace csharp {
                         }
                     }
                     else {
-                        if (Roses[i].Quality < 50) {
+                        /*if (Roses[i].Quality < 50) {
                             Roses[i].IncreaseQuality();
-                        }
+                        }*/
+                        Roses[i].IncreaseQuality();
                     }
                 }
             }
