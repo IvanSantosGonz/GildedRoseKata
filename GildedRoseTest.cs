@@ -12,8 +12,8 @@ namespace csharp {
 
             gildedRose.UpdateQuality();
 
-            var roseAfterFiveDays = new Rose("A normal rose", 27, 39);
-            Assert.True(roseAfterFiveDays.Equals(rose));
+            var roseAtEndOfDay = new Rose("A normal rose", 27, 39);
+            Assert.True(roseAtEndOfDay.Equals(rose));
         }
 
         [Test]
@@ -106,9 +106,9 @@ namespace csharp {
                 gildedRose.UpdateQuality();
             }
 
-            roseAfterFiveDays = new Rose("Backstage passes to a TAFKAL80ETC concert", 0, 46);
+            var roseAfterTenDays = new Rose("Backstage passes to a TAFKAL80ETC concert", 0, 46);
 
-            Assert.True(roseAfterFiveDays.Equals(rose));
+            Assert.True(roseAfterTenDays.Equals(rose));
         }
 
         [Test]
@@ -121,8 +121,8 @@ namespace csharp {
                 gildedRose.UpdateQuality();
             }
 
-            var roseAfterFiveDays = new Rose("Backstage passes to a TAFKAL80ETC concert", -1, 0);
-            Assert.True(roseAfterFiveDays.Equals(rose));
+            var roseAfterElevenDays = new Rose("Backstage passes to a TAFKAL80ETC concert", -1, 0);
+            Assert.True(roseAfterElevenDays.Equals(rose));
         }
     }
 }
