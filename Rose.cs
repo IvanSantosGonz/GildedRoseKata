@@ -1,7 +1,7 @@
 ﻿namespace csharp
 {
     public class Rose {
-        protected int MAXIMUM_ROSE_QUALITY = 50;
+        private int MAXIMUM_ROSE_QUALITY = 50;
         public string Name { get; set; }
 
         public int SellIn { get; set; }
