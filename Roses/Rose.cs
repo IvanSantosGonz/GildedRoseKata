@@ -6,10 +6,7 @@
 
         protected int SellIn { get; set; }
         protected int Quality { get; set; }
-
-        public Rose() {
-        }
-
+        
         public Rose(string name, int sellIn, int quality) {
             Name = name;
             SellIn = sellIn;
@@ -25,13 +22,13 @@
             return this.Name + ", " + this.SellIn + ", " + this.Quality;
         }
 
-        public virtual void IncreaseQuality() {
+        protected virtual void IncreaseQuality() {
             if (Quality < MAXIMUM_ROSE_QUALITY) {
                 Quality++;
             }
         }
 
-        public virtual void DecreaseQuality() {
+        protected virtual void DecreaseQuality() {
             if (Quality > 0) {
                 Quality--;
                 if (SellIn < 0) {
@@ -39,8 +36,8 @@
                 }
             }
         }
-        
-        public virtual void DecreaseSellIn() {
+
+        protected virtual void DecreaseSellIn() {
             SellIn--;
         }
 

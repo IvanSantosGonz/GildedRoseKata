@@ -4,7 +4,7 @@
         public BackstagePass(int sellIn, int quality) : base("Backstage passes to a TAFKAL80ETC concert", sellIn, quality) {
         }
 
-        public override void IncreaseQuality() {
+        protected override void IncreaseQuality() {
             if (SellIn < 0) {
                 Quality = 0;
             }

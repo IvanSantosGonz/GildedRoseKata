@@ -4,10 +4,10 @@
         public Sulfuras(int sellIn, int quality) : base("Sulfuras, Hand of Ragnaros", sellIn, quality) {
         }
 
-        public override void DecreaseQuality() {
+        protected override void DecreaseQuality() {
         }
-        
-        public override void DecreaseSellIn() {
+
+        protected override void DecreaseSellIn() {
         }
     }
 }
