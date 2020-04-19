@@ -11,15 +11,15 @@ namespace csharp
 
             IList<Rose> roses = new List<Rose>{
                 new Rose ("+5 Dexterity Vest", 10, 20),
-                new Rose ("Aged Brie", 2, 0),
+                new AgedBrie(2, 0),
                 new Rose ("Elixir of the Mongoose", 5, 7),
-                new Rose ("Sulfuras, Hand of Ragnaros", 0, 80),
-                new Rose ("Sulfuras, Hand of Ragnaros", -1, 80),
-                new Rose("Backstage passes to a TAFKAL80ETC concert", 15, 20),
-                new Rose("Backstage passes to a TAFKAL80ETC concert",10,49),
-                new Rose("Backstage passes to a TAFKAL80ETC concert",5,49),
+                new Sulfuras(0, 80),
+                new Sulfuras(-1, 80),
+                new BackstagePass(15, 20),
+                new BackstagePass(10,49),
+                new BackstagePass(5,49),
 				// this conjured item does not work properly yet
-				new Rose ("Conjured Mana Cake", 3, 6)
+				new Conjured(3, 6)
             };
 
             var app = new GildedRose(roses);

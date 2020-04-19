@@ -135,7 +135,7 @@ namespace csharp {
                 gildedRose.UpdateQuality();
             }
 
-            var roseAfterFiveDays = new Rose("Conjured", 5, 10);
+            var roseAfterFiveDays = new Rose("Conjured Mana Cake", 5, 10);
             Assert.True(roseAfterFiveDays.Equals(rose));
         }
     }
