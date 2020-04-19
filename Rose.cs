@@ -32,19 +32,21 @@
                 Quality--;
         }
         
-        public void DecreaseSellIn() {
+        public virtual void DecreaseSellIn() {
             SellIn--;
         }
         
     }
 
     public class Sulfuras : Rose {
-     
         
-        public Sulfuras(int sellIn, int quality) : base("Sulfuras, Hand of Ragnaros", 0, 40) {
+        public Sulfuras(int sellIn, int quality) : base("Sulfuras, Hand of Ragnaros", sellIn, quality) {
         }
 
         public override void DecreaseQuality() {
+        }
+        
+        public override void DecreaseSellIn() {
         }
     }
     
@@ -65,5 +67,7 @@
                 Quality++;
             }
         }
+        
+        
     }
 }
