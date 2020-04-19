@@ -125,7 +125,7 @@ namespace csharp {
 
         [Test]
         public void Backstage_passes_like_aged_brie_gets_quality_0_after_concert() {
-            var rose = new Rose {Name = "Backstage passes to a TAFKAL80ETC concert", SellIn = 10, Quality = 20};
+            var rose = new BackstagePass(10, 20);
             IList<Rose> roses = new List<Rose> {rose};
             GildedRose gildedRose = new GildedRose(roses);
 

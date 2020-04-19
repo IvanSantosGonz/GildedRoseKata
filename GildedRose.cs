@@ -17,17 +17,12 @@ namespace csharp {
                 else {
                     Roses[i].IncreaseQuality();
                 }
-                
+
                 Roses[i].DecreaseSellIn();
 
                 if (Roses[i].SellIn < 0) {
                     if (Roses[i].Name != "Aged Brie") {
-                        if (Roses[i].Name != BACKSTAGE_PASSES) {
-                            Roses[i].DecreaseQuality();
-                        }
-                        else {
-                            Roses[i].Quality = Roses[i].Quality - Roses[i].Quality;
-                        }
+                        Roses[i].DecreaseQuality();
                     }
                     else {
                         Roses[i].IncreaseQuality();

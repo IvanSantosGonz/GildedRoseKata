@@ -51,7 +51,6 @@
     }
     
     public class BackstagePass : Rose {
-     
         
         public BackstagePass(int sellIn, int quality) : base("Backstage passes to a TAFKAL80ETC concert", sellIn, quality) {
         }
