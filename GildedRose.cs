@@ -21,7 +21,7 @@ namespace csharp
                     {
                         if (Roses[i].Name != "Sulfuras, Hand of Ragnaros")
                         {
-                            Roses[i].Quality = Roses[i].Quality - 1;
+                            Roses[i].DecreaseQuality();
                         }
                     }
                 }
@@ -67,7 +67,7 @@ namespace csharp
                             {
                                 if (Roses[i].Name != "Sulfuras, Hand of Ragnaros")
                                 {
-                                    Roses[i].Quality = Roses[i].Quality - 1;
+                                    Roses[i].DecreaseQuality();
                                 }
                             }
                         }

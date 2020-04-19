@@ -9,6 +9,10 @@
         public override string ToString()
         {
             return this.Name + ", " + this.SellIn + ", " + this.Quality;
-        }  
+        }
+
+        public void DecreaseQuality() {
+            Quality--;
+        }
     }
 }
