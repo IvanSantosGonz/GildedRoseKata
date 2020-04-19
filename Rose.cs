@@ -35,6 +35,11 @@
         public virtual void DecreaseSellIn() {
             SellIn--;
         }
+
+        public void UpdateStatus() {
+            DecreaseSellIn();
+            DecreaseQuality();
+        }
         
     }
 
