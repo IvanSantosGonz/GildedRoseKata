@@ -56,7 +56,10 @@
         }
 
         public override void IncreaseQuality() {
-            if (SellIn < 6) {
+            if (SellIn <= 0) {
+                Quality = 0;
+            }
+            else if (SellIn < 6) {
                 Quality = Quality + 3;
             }
             else if (SellIn < 11) {
