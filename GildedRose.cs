@@ -37,7 +37,7 @@ namespace csharp
                             {
                                 if (Roses[i].Quality < 50)
                                 {
-                                    Roses[i].Quality = Roses[i].Quality + 1;
+                                    Roses[i].IncreaseQuality();
                                 }
                             }
 
@@ -45,7 +45,7 @@ namespace csharp
                             {
                                 if (Roses[i].Quality < 50)
                                 {
-                                    Roses[i].Quality = Roses[i].Quality + 1;
+                                    Roses[i].IncreaseQuality();
                                 }
                             }
                         }
@@ -80,7 +80,7 @@ namespace csharp
                     {
                         if (Roses[i].Quality < 50)
                         {
-                            Roses[i].Quality = Roses[i].Quality + 1;
+                            Roses[i].IncreaseQuality();
                         }
                     }
                 }
