@@ -52,7 +52,7 @@ namespace csharp {
         
         [Test]
         public void Aged_Brie_rose_actually_increases_in_Quality_the_older_it_gets() {
-            var rose = new Rose {Name = "Aged Brie", SellIn = 5, Quality = 35};
+            var rose = new AgedBrie(5, 35);
             IList<Rose> roses = new List<Rose> {rose};
             GildedRose gildedRose = new GildedRose(roses);
 
@@ -68,7 +68,7 @@ namespace csharp {
         
         [Test]
         public void The_quality_of_a_rose_is_never_more_than_50() {
-            var rose = new Rose {Name = "Aged Brie", SellIn = 0, Quality = 50};
+            var rose = new AgedBrie(0, 50);
             IList<Rose> roses = new List<Rose> {rose};
             GildedRose gildedRose = new GildedRose(roses);
 
